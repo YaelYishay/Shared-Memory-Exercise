@@ -1,0 +1,55 @@
+File: ex5a.c 
+=============================================================
+   
+=============================================================
+ * Writen by: adi ben ezra, id = 206124000, login = adibene
+ *            yael yishay , id = 305345811, login = yaelor
+ *
+ * Algorithm:
+
+ * MSGQ AND SHARED MEMORY
+ * ======================
+ * built out of two servers and a client
+ * the program sends msg between the client
+ * and each of the servers.
+ * the servers share data by using shared memory
+ * AS REQUIRED
+ *
+
+
+
+
+Compile: gcc -lm ex5a1.c –o ex5a1
+Compile: gcc -lm ex5a2.c –o ex5a2
+Compile: gcc -lm ex5a3.c –o ex5a3
+
+Run: ./ex5a1
+Run: ./ex5a2
+Run: ./ex5a3
+
+
+File: ex5b.c 
+=============================================================
+ SHARED MEMORY:
+=============================================================
+ * Writen by: adi ben ezra, id = 206124000, login = adibene
+ *            yael yishay , id = 305345811, login = yaelor
+ *
+ * Algorithm:
+ * A program that allocates a block of shared
+ * memory, then produces two processes that random
+ * some of numbers until prime number.then save him in
+ * shared memory, kill his brother, send signal for
+ * his father and exit. dad processes prints the number and
+ * exit too.
+ *
+ *
+ * race time:
+ * might have a race if the child a finds first prime,
+* then second finds prime and manages to send signal first.
+ */
+
+Compile: gcc -lm ex5b.c –o ex4b
+Run: ./ex4b
+
+
